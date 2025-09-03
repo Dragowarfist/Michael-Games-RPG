@@ -8,12 +8,13 @@ var attacking : bool = false
 @onready var animation_player: AnimationPlayer = $"../../AnimationPlayer"
 @onready var attack_anim: AnimationPlayer = $"../../Sprite2D/AttackEffectSprite/AnimationPlayer"
 @onready var audio: AudioStreamPlayer2D = $"../../Audio/AudioStreamPlayer2D"
-@onready var hurt_box: HurtBox = $"../../Interactions/HurtBox"
+
 
 
 
 @onready var walk: State_Walk = $"../Walk"
 @onready var idle: State_Idle = $"../Idle"
+@onready var hurt_box: HurtBox = %AttackHurtBox
 
 
 # Called when the node enters the scene tree for the first time.
